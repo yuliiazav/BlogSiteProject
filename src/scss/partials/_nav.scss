@@ -1,0 +1,80 @@
+.header {
+    &__navbox {
+        @media screen and (max-width: 1023px) {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            right: 0;
+            position: absolute;
+            top: 126px;
+        }
+        @media screen and (max-width: 767px) {
+            width: 55px;
+            top: 73px;
+        }
+    }
+    &__nav {
+        width: inherit;
+        display: flex;
+        justify-content: flex-end;
+        @media screen and (max-width: 767px) {
+            position: relative;
+            right: 76px;
+        }
+    }
+    &__navlist {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        @media only screen and (max-width: 767px) {
+            display: none;
+            .active & {
+                display: block;
+            }
+        }
+    }
+    &__navlink {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        &_blue {
+            color: $link-hover-color;
+            &:hover {
+                color: $color-accent;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__nav-item {
+        margin: 0 15px 0 0;
+        transition: 1s ease;
+    }
+    &__nav-item:hover {
+        transform: scale(1.1);
+    }
+}
+
+.mobile-nav {
+    position: relative;
+    &__btn {
+        display: none;
+        @media only screen and (max-width: 767px) {
+            display: block;
+            width: 18px;
+            border: none;
+            background: transparent;
+            .span {
+                display: block;
+                margin: 0 0 5px;
+                background: #fff;
+                height: 2px;
+                width: 18px;
+                &_dark {
+                    background: $color-main;
+                }
+            }
+        }
+    }
+}

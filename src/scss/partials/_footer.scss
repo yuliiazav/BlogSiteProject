@@ -1,0 +1,172 @@
+                .footer {
+                    background: $light-grey-bgcolor;
+                    padding: 0 160px 30px 160px;
+                    @media screen and (max-width: 1919px) {
+                        padding: 30px 60px;
+                    }
+                    &__copyrightbox {
+                        color: #B3B3BA;
+                        line-height: 20px;
+                        @media screen and (max-width: 850px) {
+                            position: absolute;
+                            right: 61px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            position: static;
+                            text-align: center;
+                        }
+                    }
+                    &__container {
+                        padding: 30px 0 0 0;
+                        display: flex;
+                        justify-content: space-between;
+                        border-top: 2px solid $grey-separator-color;
+                        @media screen and (max-width: 767px) {
+                            justify-content: center;
+                            flex-direction: column;
+                        }
+                    }
+                    &__address {
+                        color: $color-main;
+                        @media screen and (max-width: 767px) {
+                            padding-bottom: 10px;
+                        }
+                    }
+                    &__address-map {
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 30px;
+                        @media screen and (max-width: 767px) {
+                            flex-direction: column;
+                            padding-bottom: 20px;
+                        }
+                    }
+                    &__maplink {
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+                    &__contactsbox {
+                        position: relative;
+                    }
+                    &__address {
+                        position: relative;
+                    }
+                    &__contacts {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        @media screen and (max-width: 767px) {
+                            flex-direction: column;
+                            padding-bottom: 20px;
+                        }
+                    }
+                    &__social-list {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    &__tel {
+                        line-height: 20px;
+                        color: $color-main;
+                        font-weight: 700;
+                    }
+                    &__mail {
+                        font-weight: 700;
+                        line-height: 20px;
+                        color: $link-hover-color;
+                    }
+                    &__social-item {
+                        background: $link-hover-color;
+                        width: 38px;
+                        height: 38px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        border: 1px $link-hover-color solid;
+                        border-radius: 50%;
+                    }
+                    &__social-link {
+                        color: #fff;
+                    }
+                    &__icon-facebook {
+                        font-size: 26px;
+                    }
+                }
+                
+                .footer__cell {
+                    margin: 0 26px 0 0;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        background: #B3B3BA;
+                        position: absolute;
+                        top: 7px;
+                        right: -14px;
+                        border-radius: 50%;
+                        @media screen and (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+                    &:last-child::after {
+                        display: none;
+                        ;
+                    }
+                }
+                
+                .footer__cell2 {
+                    margin: 0 26px 0 0;
+                    position: relative;
+                    @media screen and (max-width: 767px) {
+                        margin: 0 26px 10px 0;
+                    }
+                    &::after {
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        background: #B3B3BA;
+                        position: absolute;
+                        top: 10px;
+                        left: -17px;
+                        border-radius: 50%;
+                        @media screen and (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+                    &:first-child::after {
+                        display: none;
+                    }
+                }
+                
+                .footer_secondary {
+                    @media screen and (max-width: 1023px) {
+                        & .footer__container {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        & .footer__contactsbox {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: start;
+                            text-align: left;
+                            width: 65%;
+                            padding-bottom: 30px;
+                            @media screen and (max-width: 767px) {
+                                align-items: center;
+                                width: 100%;
+                            }
+                        }
+                        & .footer__address-map {
+                            align-items: center;
+                        }
+                        & .footer__copyrightbox {
+                            @media screen and (max-width: 850px) {
+                                position: static;
+                            }
+                        }
+                    }
+                }

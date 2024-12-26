@@ -1,0 +1,974 @@
+                                        @font-face {
+                                            font-family: 'icomoon';
+                                            src: url('../fonts/icomoon.eot?992fhz');
+                                            src: url('../fonts/icomoon.eot?992fhz#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?992fhz') format('truetype'), url('../fonts/icomoon.woff?992fhz') format('woff'), url('../../fonts/icomoon.svg?992fhz#icomoon') format('svg');
+                                            font-weight: normal;
+                                            font-style: normal;
+                                            font-display: block;
+                                        }
+                                        
+                                        [class^="icon-"],
+                                        [class*=" icon-"] {
+                                            /* use !important to prevent issues with browser extensions that change fonts */
+                                            font-family: 'icomoon' !important;
+                                            speak: never;
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-variant: normal;
+                                            text-transform: none;
+                                            line-height: 1;
+                                            /* Better Font Rendering =========== */
+                                            -webkit-font-smoothing: antialiased;
+                                            -moz-osx-font-smoothing: grayscale;
+                                        }
+                                        
+                                        .icon-social-facebook-circular:before {
+                                            content: "\e901";
+                                        }
+                                        
+                                        .icon-facebook1:before {
+                                            content: "\e900";
+                                        }
+                                        
+                                        .icon-happy:before {
+                                            content: "\e9df";
+                                        }
+                                        
+                                        .icon-smile2:before {
+                                            content: "\e9e2";
+                                        }
+                                        
+                                        .icon-google-plus:before {
+                                            content: "\ea8b";
+                                        }
+                                        
+                                        .icon-google-plus2:before {
+                                            content: "\ea8c";
+                                        }
+                                        
+                                        .icon-facebook:before {
+                                            content: "\ea90";
+                                        }
+                                        
+                                        .icon-facebook2:before {
+                                            content: "\ea91";
+                                        }
+                                        
+                                        .icon-instagram:before {
+                                            content: "\ea92";
+                                        }
+                                        
+                                        .icon-whatsapp:before {
+                                            content: "\ea93";
+                                        }
+                                        
+                                        .icon-twitter:before {
+                                            content: "\ea96";
+                                        }
+                                        
+                                        .icon-rss:before {
+                                            content: "\ea9b";
+                                        }
+                                        
+                                        .icon-youtube2:before {
+                                            content: "\ea9e";
+                                        }
+                                        
+                                        .icon-github:before {
+                                            content: "\eab0";
+                                        }
+                                        
+                                        .icon-skype:before {
+                                            content: "\eac5";
+                                        }
+                                        
+                                        .icon-linkedin2:before {
+                                            content: "\eaca";
+                                        }
+                                        
+                                        .icon-pinterest:before {
+                                            content: "\ead1";
+                                        }
+                                        
+                                        .icon-pinterest2:before {
+                                            content: "\ead2";
+                                        }
+                                        
+                                        body {
+                                            margin: 0;
+                                            font: $main-font;
+                                            color: $main-text-color;
+                                        }
+                                        
+                                        .wrapper {
+                                            width: 100%;
+                                            position: relative;
+                                            overflow: hidden;
+                                            &_white {
+                                                background-color: #fff;
+                                            }
+                                        }
+                                        
+                                        a {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            text-decoration: none;
+                                            color: $link-reg-color;
+                                            &:hover {
+                                                text-decoration: none;
+                                                color: $link-active-color;
+                                            }
+                                        }
+                                        
+                                        .visual-full {
+                                            background: url(../img/Hsymbol-bg.svg);
+                                            background-repeat: no-repeat;
+                                            background-position: 50%;
+                                            background-size: auto 100%;
+                                            height: 100vh;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            padding: 50px 0 42px 0;
+                                            @media screen and (max-width: 1919px) {
+                                                padding: 50px 0 42px 0;
+                                            }
+                                            @media screen and (max-width: 1439px) {
+                                                padding: 50px 0 42px 0;
+                                            }
+                                            @media screen and (max-width: 1023px) {
+                                                padding: 50px 0 60px 0;
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                padding: 0 0 77px 0;
+                                            }
+                                            & .main-heading.h1 {
+                                                font: $h1;
+                                                align-self: center;
+                                                @media screen and (max-width: 767px) {
+                                                    padding: 0 50%;
+                                                    text-align: center;
+                                                }
+                                            }
+                                            & .anchor-link {
+                                                align-self: center;
+                                                width: 42px;
+                                                height: 42px;
+                                            }
+                                            .violet-wrap & {
+                                                margin-bottom: 60px;
+                                                @media screen and (max-width: 767px) {
+                                                    margin-bottom: 30px;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .visual-full .anchor-link {
+                                            position: relative;
+                                            font-size: 0;
+                                            &::after {
+                                                content: '';
+                                                width: 42px;
+                                                height: 42px;
+                                                border: 2px solid #FFFFFF;
+                                                opacity: 0.5;
+                                                position: absolute;
+                                                top: -1px;
+                                                left: -4px;
+                                                border-radius: 50%;
+                                                @media screen and (max-width: 767px) {
+                                                    top: -59px;
+                                                }
+                                            }
+                                            &::before {
+                                                content: "";
+                                                background: transparent;
+                                                border-top: 2px solid #fff;
+                                                border-left: 2px solid #fff;
+                                                width: 13px;
+                                                height: 14px;
+                                                position: absolute;
+                                                transform: rotate(225deg);
+                                                top: 11px;
+                                                left: 11px;
+                                                @media screen and (max-width: 767px) {
+                                                    top: -49px;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .address {
+                                            line-height: 20px;
+                                            font-style: normal;
+                                        }
+                                        
+                                        .fullpage-link {
+                                            font: $fullpage-link;
+                                            letter-spacing: 1px;
+                                            text-transform: uppercase;
+                                            color: $link-hover-color;
+                                            position: relative;
+                                            &:hover {
+                                                color: $color-accent;
+                                            }
+                                            &:hover::after {
+                                                border-color: $color-accent;
+                                            }
+                                            &::after {
+                                                content: '';
+                                                width: 9px;
+                                                height: 9px;
+                                                background: transparent;
+                                                border-top: 2px $link-hover-color solid;
+                                                border-left: 2px $link-hover-color solid;
+                                                top: 4px;
+                                                left: 91px;
+                                                position: absolute;
+                                                -webkit-transform: rotate(255deg);
+                                                -ms-transform: rotate(255deg);
+                                                transform: rotate(135deg);
+                                            }
+                                        }
+                                        
+                                        .violet-wrap {
+                                            background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+                                            background-repeat: no-repeat;
+                                            border-bottom-right-radius: 12px;
+                                            border-bottom-left-radius: 12px;
+                                            position: relative;
+                                            @media screen and (max-width: 767px) {
+                                                padding: 0;
+                                            }
+                                            &::after {
+                                                content: '';
+                                                width: calc(100% - 40px);
+                                                height: 10px;
+                                                background: #CACADB;
+                                                position: absolute;
+                                                bottom: -10px;
+                                                left: 20px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                            }
+                                            &::before {
+                                                content: '';
+                                                width: calc(100% - 80px);
+                                                height: 10px;
+                                                background: #E7E7F2;
+                                                position: absolute;
+                                                bottom: -20px;
+                                                left: 40px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                            }
+                                        }
+                                        
+                                        .aboutus,
+                                        .visual-full,
+                                        .services {
+                                            padding: 50px 160px;
+                                            @media screen and (max-width: 1919px) {
+                                                padding: 50px 60px;
+                                            }
+                                            @media screen and (max-width: 1439px) {
+                                                padding: 50px 60px;
+                                            }
+                                            @media screen and (max-width: 1023px) {
+                                                padding: 50px 60px;
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                padding: 0 30px;
+                                            }
+                                        }
+                                        
+                                        .aboutus {
+                                            display: grid;
+                                            grid-template-columns: 40% 60%;
+                                            grid-template-rows: 303px;
+                                            padding-bottom: 60px;
+                                            &_list {
+                                                text-align: right;
+                                                list-style: none;
+                                                padding: 0;
+                                                margin: 17px 0;
+                                            }
+                                            &__features {
+                                                border-right: 4px solid rgba(255, 255, 255, 0.3);
+                                                padding-right: 60px;
+                                            }
+                                            &__details {
+                                                padding: 30px 60px;
+                                                display: flex;
+                                                align-items: flex-start;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                display: none;
+                                                &.active {
+                                                    display: block;
+                                                }
+                                            }
+                                            &__links {
+                                                font: $h1;
+                                                color: $grey;
+                                            }
+                                            &__items {
+                                                padding-bottom: 30px;
+                                            }
+                                            &__links.active {
+                                                background-image: $gradient-redtext;
+                                                -webkit-background-clip: text;
+                                                -webkit-text-fill-color: transparent;
+                                                &:active {
+                                                    background-image: $gradient-redtext;
+                                                    -webkit-background-clip: text;
+                                                    -webkit-text-fill-color: transparent;
+                                                }
+                                            }
+                                            &__links:active {
+                                                background-image: $gradient-redtext;
+                                                -webkit-background-clip: text;
+                                                -webkit-text-fill-color: transparent;
+                                            }
+                                            &__links:hover {
+                                                color: $color-accent;
+                                            }
+                                            &__title {
+                                                font: $h2;
+                                                margin: 0 0 30px 0;
+                                            }
+                                            &__description {
+                                                font-size: 19px;
+                                                line-height: 30px;
+                                                margin: 0;
+                                            }
+                                            &__tabscontent.tabscontent-holder {
+                                                padding: 34px 0;
+                                            }
+                                            @media screen and (max-width: 1919px) {
+                                                padding: 50px 60px 42px 60px;
+                                                grid-template-columns: 44% 56%;
+                                            }
+                                            @media screen and (max-width: 1439px) {
+                                                grid-template-columns: 50% 50%;
+                                                &__details {
+                                                    padding: 0 0 0 60px;
+                                                }
+                                            }
+                                            @media screen and (max-width: 1023px) {
+                                                grid-template-columns: 1fr;
+                                                flex-direction: column;
+                                                display: flex;
+                                                padding-bottom: 30px;
+                                                &__details {
+                                                    padding: 60px 0 30px;
+                                                }
+                                                &__features {
+                                                    padding: 0;
+                                                    width: 100%;
+                                                    border: none;
+                                                    overflow: auto;
+                                                }
+                                                &_list {
+                                                    display: flex;
+                                                }
+                                                &__items {
+                                                    margin-right: 30px;
+                                                    flex-shrink: 0;
+                                                }
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                grid-template-columns: 1fr;
+                                                flex-direction: column;
+                                                display: flex;
+                                                padding-bottom: 30px;
+                                                &__details {
+                                                    padding: 0;
+                                                }
+                                                &__features {
+                                                    padding: 0;
+                                                    width: 100%;
+                                                    border: none;
+                                                    overflow: auto;
+                                                    margin-bottom: 30px;
+                                                }
+                                                &_list {
+                                                    display: flex;
+                                                    margin: 0;
+                                                }
+                                                &__items {
+                                                    margin-right: 30px;
+                                                    flex-shrink: 0;
+                                                }
+                                                &__links {
+                                                    font-size: 30px;
+                                                    line-height: 36px;
+                                                }
+                                                &__title {
+                                                    font-size: 20px;
+                                                    line-height: 24px;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .h1__heading {
+                                            font: $h1;
+                                            background-image: $gradient-redtext;
+                                            -webkit-background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                            margin: 0;
+                                            @media screen and (max-width: 767px) {
+                                                font-size: 30px;
+                                                line-height: 36px;
+                                            }
+                                        }
+                                        
+                                        .services {
+                                            &__boxes {
+                                                display: grid;
+                                                grid-template-columns: repeat(3, 1fr);
+                                                grid-template-rows: 1fr 1fr;
+                                                padding-bottom: 60px;
+                                                grid-gap: 60px;
+                                            }
+                                            &__heading {
+                                                margin: 0 0 60px 0;
+                                            }
+                                            &__title {
+                                                font: $h3;
+                                                color: $link-hover-color;
+                                                margin: 0 0 15px 0;
+                                            }
+                                            &__text {
+                                                font: $p;
+                                                margin: 0;
+                                            }
+                                            &__link {
+                                                margin-bottom: 10px;
+                                                display: block;
+                                            }
+                                            &__imglink {
+                                                width: 92px;
+                                                height: 92px;
+                                                margin-bottom: 30px;
+                                                background: #FFFFFF;
+                                                border-radius: 24px;
+                                                display: block;
+                                            }
+                                            @media screen and (max-width: 1023px) {
+                                                &__boxes {
+                                                    grid-template-columns: repeat(2, 1fr);
+                                                    grid-auto-flow: row;
+                                                }
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                &__boxes {
+                                                    grid-template-columns: 1fr;
+                                                    grid-auto-flow: row;
+                                                    padding: 0;
+                                                    grid-gap: 30px;
+                                                }
+                                                &__heading {
+                                                    font-size: 30px;
+                                                    line-height: 36px;
+                                                    margin: 0 0 30px 0;
+                                                }
+                                            }
+                                        }
+                                        
+                                        //team section
+                                        .team {
+                                            margin: 80px 160px 60px 160px;
+                                            background-color: $light-grey-bgcolor;
+                                            border-radius: 12px;
+                                            @media screen and (max-width: 1919px) {
+                                                margin: 80px 60px 30px 60px;
+                                            }
+                                            @media screen and (max-width: 1439px) {
+                                                margin: 80px 60px 30px 60px;
+                                            }
+                                            @media screen and (max-width: 1023px) {
+                                                margin: 80px 60px 30px 60px;
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                margin: 40px 30px 30px 30px;
+                                            }
+                                            &__imgbox {
+                                                width: 400px;
+                                                height: 298px;
+                                                @media screen and (max-width: 1919px) {
+                                                    width: 400px;
+                                                    height: 344px;
+                                                }
+                                                @media screen and (max-width: 1439px) {
+                                                    width: 400px;
+                                                    height: 528px;
+                                                }
+                                                @media screen and (max-width: 1023px) {
+                                                    width: 100%;
+                                                    height: 500px;
+                                                }
+                                                @media screen and (max-width: 767px) {
+                                                    width: 100%;
+                                                    height: 500px;
+                                                }
+                                            }
+                                            &__slideimg {
+                                                width: 100%;
+                                                height: 100%;
+                                                border-radius: 12px 0 0 12px;
+                                                @media screen and (max-width: 1439px) {
+                                                    object-fit: cover;
+                                                }
+                                                @media screen and (max-width: 1023px) {
+                                                    border-radius: 12px;
+                                                }
+                                                @media screen and (max-width: 767px) {
+                                                    border-top-left-radius: 12px;
+                                                    border-top-right-radius: 12px;
+                                                }
+                                                @media screen and (max-width: 767px) {
+                                                    object-fit: cover;
+                                                }
+                                            }
+                                            &__textbox {
+                                                margin: 30px 30px 30px 0;
+                                                @media screen and (max-width: 1023px) {
+                                                    margin: 0;
+                                                    padding: 30px;
+                                                }
+                                            }
+                                            &__membername {
+                                                font: $h4;
+                                                margin: 0 0 6px 0;
+                                                color: #B3B3BA;
+                                            }
+                                            &__memberposition {
+                                                margin: 0;
+                                                font: $p;
+                                                color: #B3B3BA;
+                                            }
+                                            &__heading {
+                                                margin-bottom: 30px;
+                                            }
+                                        }
+                                        
+                                        //slick slider
+                                        .team .slick-initialized .slick-slide {
+                                            display: grid;
+                                            grid-template-columns: 1fr 5fr;
+                                            grid-template-rows: 1fr;
+                                            grid-column-gap: 30px;
+                                            @media screen and (max-width: 1023px) {
+                                                grid-template-columns: 1fr;
+                                                grid-template-rows: 2fr;
+                                                grid-column-gap: 30px;
+                                            }
+                                        }
+                                        
+                                        .slick-prev.slick-arrow,
+                                        .slick-next.slick-arrow {
+                                            display: none!important;
+                                        }
+                                        
+                                        .slick-dots {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            padding: 0;
+                                            position: absolute;
+                                            left: calc(50% - 46px);
+                                            margin: 30px 0 0 0;
+                                            & li {
+                                                list-style-type: none;
+                                            }
+                                            & button {
+                                                font-size: 0;
+                                                border: none;
+                                                padding: 0;
+                                                width: 16px;
+                                                height: 16px;
+                                                background: $link-hover-color;
+                                                opacity: 0.2;
+                                                border-radius: 50%;
+                                                margin: 0 15px 0 0;
+                                            }
+                                            & .slick-active button {
+                                                background: $link-hover-color;
+                                                opacity: 1;
+                                            }
+                                        }
+                                        
+                                        //brands section  
+                                        .brands {
+                                            padding: 60px 0;
+                                            @media screen and (max-width: 1919px) {
+                                                padding: 60px 0 0 0;
+                                            }
+                                            &__heading {
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 18px;
+                                                color: $color-main;
+                                                letter-spacing: 1px;
+                                                text-transform: uppercase;
+                                                text-align: center;
+                                                margin: 0;
+                                                padding-bottom: 30px;
+                                            }
+                                            &__container {
+                                                padding: 0 100px;
+                                                @media screen and (max-width: 1919px) {
+                                                    padding: 0;
+                                                }
+                                            }
+                                            &__logo-list {
+                                                margin: 0;
+                                                padding: 0;
+                                                list-style: none;
+                                                border-radius: 12px;
+                                                overflow: hidden;
+                                                display: grid;
+                                                grid-template-columns: repeat(4, 1fr);
+                                                grid-template-rows: repeat(3, 1fr);
+                                                @media screen and (max-width: 1023px) {
+                                                    grid-template-columns: repeat(3, 1fr);
+                                                    grid-template-rows: repeat(4, 1fr);
+                                                }
+                                                @media screen and (max-width: 767px) {
+                                                    grid-template-columns: 100%;
+                                                    grid-template-rows: repeat(6, 1fr);
+                                                    grid-auto-flow: column;
+                                                }
+                                                @media screen and (max-width: 1919px) {
+                                                    border-radius: 0;
+                                                    overflow: visible;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .logo-list {
+                                            &__link {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                height: 120px;
+                                                width: 100%;
+                                                background-color: #1C4280;
+                                            }
+                                            &__link_darkgreen {
+                                                background-color: #143646;
+                                            }
+                                            &__link_orange {
+                                                background-color: #FD9339;
+                                            }
+                                            &__link_violet {
+                                                background-color: #9E4DC3;
+                                            }
+                                            &__link_grey {
+                                                background-color: #E2E2E4;
+                                            }
+                                            &__link_red {
+                                                background-color: #C71C36;
+                                            }
+                                            &__link_blue {
+                                                background-color: #DCF3F9;
+                                            }
+                                            &__link_beige {
+                                                background-color: #EAEAEA;
+                                            }
+                                            &__link_darkviolet {
+                                                background-color: #282240;
+                                            }
+                                            &__link_darkblue {
+                                                background-color: #1D4568;
+                                            }
+                                            &__link_black {
+                                                background-color: #000000;
+                                            }
+                                        }
+                                        
+                                        //publications section
+                                        .publications {
+                                            padding: 30px 160px;
+                                            background: $light-grey-bgcolor;
+                                            @media screen and (max-width: 1919px) {
+                                                padding: 30px 60px;
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                padding: 30px 30px;
+                                            }
+                                            &__mainheading {
+                                                background-image: $gradient-redtext;
+                                                -webkit-background-clip: text;
+                                                -webkit-text-fill-color: transparent;
+                                                margin: 0;
+                                                padding-bottom: 30px;
+                                            }
+                                            & .fullpage-link {
+                                                bottom: 10px;
+                                            }
+                                            & .fullpage-link::after {
+                                                top: 3px;
+                                                left: 124px;
+                                            }
+                                            &__heading {
+                                                font: $h4;
+                                                color: $link-hover-color;
+                                                margin: 0;
+                                                padding-bottom: 15px;
+                                            }
+                                            &__date {
+                                                color: #B3B3BA;
+                                                font-weight: 700;
+                                                font-size: 12px;
+                                                line-height: 15px;
+                                                letter-spacing: 1px;
+                                                text-transform: uppercase;
+                                                padding-bottom: 15px;
+                                                display: block;
+                                            }
+                                            &__text {
+                                                margin: 0;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 22px;
+                                                color: #000000;
+                                            }
+                                            &__img {
+                                                border-radius: 8px 8px 0px 0px;
+                                                width: 100%;
+                                                height: 200px;
+                                                object-fit: cover;
+                                            }
+                                            &__textbox {
+                                                padding: 30px;
+                                            }
+                                            &__box {
+                                                background-color: #fff;
+                                                border-radius: 8px;
+                                                @media screen and (max-width: 1023px) {
+                                                    &:last-child {
+                                                        grid-column: 1 / 3;
+                                                    }
+                                                }
+                                                @media screen and (max-width: 767px) {
+                                                    grid-column: 1 / 1;
+                                                    &:last-child {
+                                                        grid-column: 1 / 1;
+                                                    }
+                                                }
+                                            }
+                                            &__textseparator {
+                                                border-top: 4px solid #E6E6F0;
+                                                padding-top: 15px;
+                                            }
+                                            &__container {
+                                                display: grid;
+                                                grid-template-columns: repeat(3, 1fr);
+                                                grid-template-rows: 1fr;
+                                                grid-gap: 30px;
+                                                @media screen and (max-width: 1023px) {
+                                                    grid-template-columns: repeat(2, 1fr);
+                                                    grid-auto-flow: row;
+                                                }
+                                                @media screen and (max-width: 767px) {
+                                                    grid-template-columns: 1fr;
+                                                    grid-template-rows: 3fr;
+                                                }
+                                            }
+                                        }
+                                        
+                                        //about us page
+                                        .about {
+                                            &__textbox {
+                                                @media screen and (max-width: 1023px) {
+                                                    padding: 0 30px 0 0;
+                                                }
+                                            }
+                                            &__title {
+                                                padding-bottom: 28px;
+                                            }
+                                            &__text {
+                                                color: #000;
+                                                margin: 0;
+                                                font-size: 19px;
+                                                line-height: 30px;
+                                                padding-bottom: 28px;
+                                                &:last-child {
+                                                    @media screen and (max-width: 1419px) {
+                                                        padding: 0;
+                                                    }
+                                                    @media screen and (max-width: 1023px) {
+                                                        padding-bottom: 28px;
+                                                    }
+                                                }
+                                                &__resultsbox {
+                                                    padding: 0 30px;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .aboutpage-sections {
+                                            padding: 60px 280px;
+                                            display: grid;
+                                            grid-template-columns: 65% 35%;
+                                            grid-column-gap: 30px;
+                                            @media screen and (max-width: 1919px) {
+                                                padding: 60px 180px;
+                                            }
+                                            @media screen and (max-width: 1419px) {
+                                                padding: 60px;
+                                                grid-template-columns: 55% 40%;
+                                            }
+                                            @media screen and (max-width: 1023px) {
+                                                grid-template-columns: 1fr;
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                padding: 30px;
+                                            }
+                                        }
+                                        
+                                        .ourresults {
+                                            padding: 0;
+                                            margin: 0;
+                                            list-style: none;
+                                            position: relative;
+                                            &__details {
+                                                display: block;
+                                                font: $p;
+                                                color: $color-main;
+                                                padding-bottom: 40px;
+                                            }
+                                            &__details:last-child {
+                                                padding-bottom: 0;
+                                            }
+                                            &__list {
+                                                font-weight: 700;
+                                                font-size: 36px;
+                                                line-height: 44px;
+                                                background: $gradient-redtext;
+                                                background-clip: border-box;
+                                                -webkit-background-clip: text;
+                                                -webkit-text-fill-color: transparent;
+                                                background-clip: text;
+                                                text-fill-color: transparent;
+                                                padding-bottom: 10px;
+                                                position: relative;
+                                                display: inline-block;
+                                                padding-left: 9px;
+                                            }
+                                            &::before {
+                                                content: '';
+                                                width: 4px;
+                                                height: 322px;
+                                                background: $grey-separator-color;
+                                                position: absolute;
+                                                left: -30px;
+                                            }
+                                            &__icon {
+                                                width: 24px;
+                                                height: 24px;
+                                            }
+                                        }
+                                        
+                                        .team-imgbox {
+                                            width: 100vw;
+                                            height: 584px;
+                                            @media screen and (max-width: 1919px) {
+                                                height: 438px;
+                                            }
+                                            @media screen and (max-width: 1439px) {
+                                                height: 312px;
+                                            }
+                                            @media screen and (max-width: 1023px) {
+                                                height: 234px;
+                                            }
+                                            @media screen and (max-width: 767px) {
+                                                height: 114px;
+                                            }
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background: url(../img/Teambg-aboutus.jpg);
+                                            background-size: cover;
+                                            background-position: 100%;
+                                            &__title {
+                                                font-weight: 700;
+                                                font-size: 96px;
+                                                line-height: 117px;
+                                                letter-spacing: 63px;
+                                                text-transform: uppercase;
+                                                color: #FFFFFF;
+                                                opacity: 0.8;
+                                                text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+                                                @media screen and (max-width: 1439px) {
+                                                    font-size: 86px;
+                                                    line-height: 105px;
+                                                }
+                                                @media screen and (max-width: 1023px) {
+                                                    font-size: 46px;
+                                                    line-height: 56px;
+                                                }
+                                                @media screen and (max-width: 767px) {
+                                                    font-size: 36px;
+                                                    line-height: 44px;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .ourquality {
+                                            grid-column-gap: 60px;
+                                            &.aboutpage-sections {
+                                                grid-template-columns: 70% 26%;
+                                                @media screen and (max-width: 1023px) {
+                                                    grid-template-columns: 1fr;
+                                                }
+                                            }
+                                        }
+                                        
+                                        //ahievements slider
+                                        .achievements {
+                                            padding: 30px 160px 90px 160px;
+                                            @media screen and (max-width: 1919px) {
+                                                padding: 30px 60px 60px 60px;
+                                            }
+                                            background: $light-grey-bgcolor;
+                                            &__title {
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                text-align: center;
+                                                letter-spacing: 1px;
+                                                text-transform: uppercase;
+                                                margin: 0;
+                                                padding-bottom: 30px;
+                                                color: $color-main;
+                                            }
+                                        }
+                                        
+                                        .achievements__gallery {
+                                            & .slick-slide {
+                                                display: grid;
+                                                grid-template-columns: 1fr;
+                                                grid-template-rows: 1fr;
+                                                grid-column-gap: 30px;
+                                                background: #fff!important;
+                                                border-radius: 12px;
+                                                height: 110px;
+                                                justify-content: center;
+                                                align-items: center;
+                                                margin: 0 20px;
+                                            }
+                                            & .slick-slide img {
+                                                display: flex;
+                                                justify-self: center;
+                                                @media screen and (max-width: 1023px) {
+                                                    height: 40px;
+                                                }
+                                            }
+                                            & .slick-dots {
+                                                @media screen and (max-width: 767px) {
+                                                    left: calc(50% - 85px);
+                                                }
+                                            }
+                                        }
